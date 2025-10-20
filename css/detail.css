@@ -1,0 +1,151 @@
+/* Detail Page Specific Styles */
+
+#content-wrapper {
+  width: 100%;
+  float: left;
+}
+
+/* Detail Article */
+.detail-article {
+  width: 620px;
+  float: left;
+  padding: 20px;
+}
+
+.article-header {
+  margin-bottom: 20px;
+}
+
+.article-header h1 {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.article-meta {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  border-top: 2px solid #eee;
+  border-bottom: 2px solid #eee;
+  font-size: 13px;
+  color: #666;
+}
+
+.article-meta span {
+  display: inline-block;
+}
+
+.article-image {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.article-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article-content {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #444;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.article-content p {
+  margin-bottom: 20px;
+}
+
+.article-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Tags */
+.article-tags {
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 25px;
+}
+
+.article-tags strong {
+  color: #333;
+  margin-right: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background: #f0f0f0;
+  color: #555;
+  padding: 5px 12px;
+  margin: 5px 5px 5px 0;
+  border-radius: 15px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+}
+
+.tag:hover {
+  background: #e0e0e0;
+}
+
+/* Article Navigation */
+.article-navigation {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #446500;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.nav-button:hover {
+  background: #669900;
+}
+
+.nav-button.home {
+  background: #0099cc;
+}
+
+.nav-button.home:hover {
+  background: #0077aa;
+}
+
+.nav-button.prev,
+.nav-button.next {
+  background: #666;
+}
+
+.nav-button.prev:hover,
+.nav-button.next:hover {
+  background: #888;
+}
+
+/* Responsive adjustments for navigation */
+@media (max-width: 768px) {
+  .article-navigation {
+    flex-direction: column;
+  }
+
+  .nav-button {
+    width: 100%;
+    text-align: center;
+  }
+}
